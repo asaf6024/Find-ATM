@@ -32,7 +32,7 @@ const List = (props) => {
                                         <br />
                                         <span>{atm.ATM_Address} | {atm.ATM_Type}</span>
                                     </p>
-
+                                    <hr />
                                 </li>
                             })
                             }

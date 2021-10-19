@@ -10,7 +10,7 @@ const Header = () => {
         <div className='icons'>
             <SocialIcons />
         </div>
-        <h1 className='text-center font-weight-bold'>Find My ATM - Asaf Almog</h1>
+        <h1 className='text-center font-weight-bold'>Find My ATM </h1>
 
         <br />
     </div>

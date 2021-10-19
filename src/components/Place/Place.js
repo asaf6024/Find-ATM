@@ -84,7 +84,7 @@ const Place = (props) => {
                                             cursor: 'pointer'
 
                                         }
-                                        : { background: 'rgba(0, 0, 0, 0.185)', zIndex: '2' }
+                                        : { background: 'white', zIndex: '2' }
 
                                     return (
                                         <div
