@@ -31,8 +31,10 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Press
 
-![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
- + R and paste
+![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
+ + 
+ ![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/r_letter.JPG)
+ and paste:
 ```sh
 chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
 ```
