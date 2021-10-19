@@ -1,7 +1,7 @@
 
-## Weather Forecast 
+# Weather Forecast 
 
-[Live Demo](https://find-atm-asaf.netlify.app/)
+## [Live Demo](https://find-atm-asaf.netlify.app/)
 
 A simple React app that displays a google map with markers of a chosen city from several API sources:
 
@@ -9,7 +9,7 @@ A simple React app that displays a google map with markers of a chosen city from
 - **Geocoding API**
 - **data.gov.il**: ATMs
 
-![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/findMyAtm.jpg)
+![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/findMyAtm.JPG)
 
 
 ## Getting started
@@ -21,7 +21,7 @@ Fork the project and clone it locally.<br />
 Create a file at the root of the project called `.env` with the following contents:
 
 ```sh
-REACT_APP_API_KEY = 'The API key you obtained from Geocoding API'
+REACT_APP_GOOGLE_KEY = 'The API key you obtained from Geocoding API'
 ```
 
 In the project directory, you can run:
@@ -29,4 +29,11 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Press
+
+![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
+ + R and paste
+```sh
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+```
+Click Enter and Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
