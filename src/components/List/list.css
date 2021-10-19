@@ -1,5 +1,5 @@
 .listRow {
-  height: 600px;
+  height: 550px;
   overflow: auto;
 }
 .listItem {
@@ -16,4 +16,9 @@ label {
 .listItem span {
   color: gray;
   font-size: 10pt;
+}
+@media only screen and (max-width: 600px) {
+  .listRow {
+    height: 150px;
+  }
 }
