@@ -1,7 +1,7 @@
 
-## Weather Forecast 
+# Weather Forecast 
 
-[Live Demo](https://find-atm-asaf.netlify.app/)
+## [Live Demo](https://find-atm-asaf.netlify.app/)
 
 A simple React app that displays a google map with markers of a chosen city from several API sources:
 
