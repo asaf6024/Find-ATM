@@ -9,7 +9,7 @@ A simple React app that displays a google map with markers of a chosen city from
 - **Geocoding API**
 - **data.gov.il**: ATMs
 
-![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/findMyAtm.jpg)
+![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/findMyAtm.JPG)
 
 
 ## Getting started
