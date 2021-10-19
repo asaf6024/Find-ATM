@@ -1,0 +1,19 @@
+.listRow {
+  height: 500px;
+  overflow: auto;
+}
+.listItem {
+  text-align: right;
+}
+.listItem:hover {
+  background: rgba(0, 0, 0, 0.185);
+  cursor: pointer;
+}
+label {
+  text-align: right !important;
+  right: 0 !important;
+}
+.listItem span {
+  color: gray;
+  font-size: 10pt;
+}

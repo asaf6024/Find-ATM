@@ -1,0 +1,13 @@
+.placesDiv {
+  position: absolute;
+  z-index: 3 !important;
+  /* width: 100%; */
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+}
+.md-form .prefix {
+  right: -50px !important;
+}
+.placesDiv label {
+  right: 20% !important;
+}
