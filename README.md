@@ -29,9 +29,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Press
-
-![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
+Press ![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
  + 
  ![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/r_letter.JPG)
  and paste:
