@@ -21,7 +21,7 @@ Fork the project and clone it locally.<br />
 Create a file at the root of the project called `.env` with the following contents:
 
 ```sh
-REACT_APP_API_KEY = 'The API key you obtained from Geocoding API'
+REACT_APP_GOOGLE_KEY = 'The API key you obtained from Geocoding API'
 ```
 
 In the project directory, you can run:
