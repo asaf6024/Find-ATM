@@ -29,7 +29,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Press **Windows+ r** and paste
+Press **((https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.jpg)+ R** and paste
 ```sh
 chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
 ```
