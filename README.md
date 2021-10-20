@@ -3,7 +3,7 @@
 
 ## [Live Demo](https://find-atm-asaf.netlify.app/)
 
-A simple React app that displays a google map with markers of a chosen city from several API sources:
+A simple React app that displays a Map with markers of ATMs in a chosen city from several API sources:
 
 - **react-places-autocomplete**: location autocomplete
 - **Geocoding API**
@@ -29,9 +29,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Press
-
-![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
+Press ![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/windows.JPG)
  + 
  ![](https://github.com/asaf6024/Find-ATM/blob/master/public/images/r_letter.JPG)
  and paste:
