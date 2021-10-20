@@ -36,7 +36,7 @@ const List = (props) => {
                             })
                             }
                         </ul>
-                        : <p className='text-center font-weight-bold'>אנא הקלד/י עיר</p>
+                        : <p className='text-center font-weight-bold'>אנא הקלד שם עיר בישראל</p>
                 }
 
             </MDBCol>
