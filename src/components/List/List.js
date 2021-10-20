@@ -8,7 +8,6 @@ import './list.css'
 
 const List = (props) => {
 
-
     return (
         <MDBRow className='listRow'>
             <MDBCol sm='12'>

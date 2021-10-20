@@ -6,10 +6,10 @@ import axios from "axios";
 import './map.css'
 
 const Map = (props) => {
+
     const [selectedATM, setSelectedATM] = useState(null)
     const [lat, setLat] = useState(31.046051)
     const [lng, setLag] = useState(34.851612)
-    const prevMarkersRef = useRef([]);
 
     //Set Selected ATM by click
     useEffect(() => {
@@ -21,7 +21,7 @@ const Map = (props) => {
     }, [props.atmItem])
 
 
-    //Initial map after searched
+    //Update map after searched
     useEffect(() => {
 
         //check if any data returned from API
@@ -29,9 +29,6 @@ const Map = (props) => {
 
             //check if data included ATMs
             if (props.ATMs.records.length > 0) {
-                // setZoom(Number(20))
-                // setLat(props.ATMs.records[0].X_Coordinate)
-                // setLag(props.ATMs.records[0].Y_Coordinate)
 
                 //Find LAT & LNG of location by city Name
                 axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${props.ATMs.q}&key=${process.env.REACT_APP_GOOGLE_KEY}`)
@@ -47,6 +44,7 @@ const Map = (props) => {
     const setMapFromSerched = () => {
 
         return <GoogleMap
+            dire
             defaultZoom={20}
             zoom={props.zoom}
             defaultCenter={{ lat: lat, lng: lng }}
@@ -56,8 +54,7 @@ const Map = (props) => {
             {
                 props.ATMs.records.map(result => {
                     return <Marker
-
-                        ref={prevMarkersRef}
+                        animation={window.google.maps.Animation.DROP}
                         key={result._id}
                         position={{
                             lat: result.Y_Coordinate,
@@ -72,7 +69,7 @@ const Map = (props) => {
                         }}
 
                         icon={{
-                            url: 'https://www.atmmoneymachine.com/wp-content/uploads/2020/10/HL2atm.png',
+                            url: `../images/atm.jpg`,
                             scaledSize: new window.google.maps.Size(15, 25)
                         }}
                     />

@@ -12,6 +12,10 @@
 .placesDiv label {
   right: 20% !important;
 }
+input.form-control {
+  color: black !important;
+  font-weight: bold;
+}
 /* input.form-control {
   background-color: transparent !important;
   border: 2px solid !important;

@@ -4,15 +4,15 @@ import React, { useEffect, useState } from 'react';
 import Place from './components/Place/Place';
 import List from './components/List/List';
 import WrappedMap from './components/Map/Map';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Spinner from './components/Spinner/Spinner';
 
 //bootstrap
 import { MDBCard, MDBCol, MDBContainer, MDBRow } from 'mdbreact';
 
 //css
 import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Spinner from './components/Spinner/Spinner';
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
   const [zoom, setZoom] = useState(7.5)
   const [atmItem, setAtmItem] = useState({ lat: null, lng: null })
   const [showSpinner, setShowSpinner] = useState(false)
+
   return (
     <div className='container-fluid'>
       <Header />
@@ -43,7 +44,9 @@ function App() {
               ATMs={ATMs}
               setAtmItem={setAtmItem}
             />
+
             <Spinner showSpinner={showSpinner} />
+
           </MDBCol>
 
           <MDBCol sm='12' lg='8'>
