@@ -4,9 +4,10 @@
 ## [Live Demo](https://find-atm-asaf.netlify.app/)
 
 A simple React app that displays a Map included ATMs markers of a chosen city.
+
 Using several API sources:
 
-- **react-places-autocomplete**: location autocomplete
+- **react-places-autocomplete**
 - **Geocoding API**
 - **data.gov.il**: ATMs
 
