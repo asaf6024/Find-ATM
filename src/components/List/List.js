@@ -17,7 +17,7 @@ const List = (props) => {
                         <ul>
 
                             {
-                                props.ATMs.records.length == 0 &&
+                                props.ATMs.records.length === 0 &&
                                 <p className='text-right font-weight-bold'>לא נמצאו נתונים</p>
                             }
 

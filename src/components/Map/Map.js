@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps";
 import axios from "axios";
 
@@ -19,7 +19,6 @@ const Map = (props) => {
         props.setZoom(18)
 
     }, [props.atmItem])
-
 
     //Update map after searched
     useEffect(() => {

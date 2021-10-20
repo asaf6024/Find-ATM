@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 //components
 import Place from './components/Place/Place';
@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 import Spinner from './components/Spinner/Spinner';
 
 //bootstrap
-import { MDBCard, MDBCol, MDBContainer, MDBRow } from 'mdbreact';
+import { MDBCol, MDBContainer, MDBRow } from 'mdbreact';
 
 //css
 import './App.css';

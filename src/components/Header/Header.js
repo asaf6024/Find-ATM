@@ -2,6 +2,8 @@ import React from "react";
 
 //css
 import './header.css'
+
+//components
 import SocialIcons from "./SocialIcons/SocialIcons";
 
 const Header = () => {
@@ -11,7 +13,6 @@ const Header = () => {
             <SocialIcons />
         </div>
         <h1 className='text-center font-weight-bold'>Find My ATM </h1>
-
         <br />
     </div>
 

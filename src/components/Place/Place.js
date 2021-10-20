@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { MDBCol, MDBInput, MDBRow } from 'mdbreact'
 import PlacesAutocomplete from 'react-places-autocomplete'
 import _ from "lodash";
@@ -11,12 +11,11 @@ const Place = (props) => {
 
     const [display, setDisplay] = useState('')
 
-
-    //Serach ATMs by city name
-    const debounceFindCity = _.debounce((city) => {
+    //Serach ATMs by city name after clicking
+    const findCityATMs = (city) => {
         props.setShowSpinner(true)
 
-        //**api**
+        //**ATMs api**
         axios.post('https://data.gov.il/api/3/action/datastore_search', {
             resource_id: 'b9d690de-0a9c-45ef-9ced-3e5957776b26',
             q: city.split(',')[0]
@@ -35,17 +34,21 @@ const Place = (props) => {
                 props.setShowSpinner(false)
             });
 
-    }, 500);
+    }
 
     const handleChange = value => {
         props.setAddress(value)
 
-        //display results
+        //display suggestions
         setDisplay('block')
     }
 
     const handleSelect = value => {
         props.setAddress(value)
+        findCityATMs(value)
+
+        //hide suggestions
+        setDisplay('none')
     }
 
     return (
@@ -60,6 +63,7 @@ const Place = (props) => {
                 >
                     {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => {
                         return <div style={{ marginRight: '50px' }}>
+
                             <MDBInput label="* עיר"
                                 style={{ direction: 'rtl' }}
                                 {...getInputProps({
@@ -68,7 +72,6 @@ const Place = (props) => {
                                 required icon="home" group type="text"
                                 error="wrong" name="user_name"
                                 success="right"
-
                             />
 
                             <div className='placesDiv' style={{ display }}>
@@ -90,11 +93,12 @@ const Place = (props) => {
                                         <div
                                             {...getSuggestionItemProps(suggestion, { style })}
 
-                                            onClick={() => {
-                                                debounceFindCity(suggestion.description)
-                                                setDisplay('none')
-                                            }}
+                                        // onClick={() => {
+                                        //     findCityATMs(suggestion.description)
+                                        //     setDisplay('none')
+                                        // }}
                                         >
+
                                             {suggestion.description}
                                         </div>
                                     )
