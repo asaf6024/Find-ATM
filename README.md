@@ -12,6 +12,7 @@ Using several API sources:
 - **data.gov.il**: ATMs
 
 ![Home Page](https://github.com/asaf6024/Find-ATM/blob/master/public/images/findMyAtm.JPG)
+![findATM](https://user-images.githubusercontent.com/33829557/142764641-cad3c999-1fa3-4581-91e6-93b91276f01b.gif)
 
 
 ## Getting started
